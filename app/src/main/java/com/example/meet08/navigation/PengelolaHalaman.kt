@@ -31,7 +31,7 @@ fun MahasiswaApp(
     navController: NavHostController = rememberNavController()
 ) {
     val mahasiswaUiState = mahasiswaViewModel.mahasiswaUiState.collectAsState().value
-    val krsStateUi = RencanaStudiViewModel.krsStateUi.collectAsState().value
+    val krsStateUi = krsViewModel.krsUiState.collectAsState().value
 
     NavHost(
         navController = navController,

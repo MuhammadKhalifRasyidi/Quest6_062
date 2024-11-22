@@ -40,7 +40,7 @@ import com.example.meet08.R
 
 @Composable
 fun MahasiswaFormView(
-    modifier: Modifier,
+    modifier: Modifier = Modifier,
     onSubmitButtonClicked: (MutableList<String>) -> Unit,
     onBackButtonClicked: () -> Unit
 ) {
