@@ -2,13 +2,14 @@ package com.example.pertemuan8.ui.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -75,12 +76,25 @@ fun MahasiswaFormView(
                     fontWeight = FontWeight.Bold
                 )
                 Text(
-                    text = "selalu di depan",
+                    text = "Selalu di Depan",
                     color = Color.Red,
                     fontWeight = FontWeight.Light
                 )
             }
         }
+        Spacer(modifier = Modifier.padding(top = 16.dp))
+        Box(
+            modifier = Modifier
+                .background(
+                    color = Color.White,
+                    shape = RoundedCornerShape(
+                        topEnd = 15.dp,
+                        topStart = 15.dp
+                    )
+                )
+                .fillMaxSize(),
+        ) {
 
+        }
     }
 }
