@@ -55,6 +55,7 @@ fun DynamicSelectTextField(
                     text = { Text(text = option) },
                     onClick = {
                         expanded = false
+                        onValueChangedEvent(option)
                     }
                 )
             }

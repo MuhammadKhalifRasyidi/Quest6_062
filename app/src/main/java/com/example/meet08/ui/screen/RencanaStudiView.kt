@@ -44,7 +44,7 @@ import com.example.myapplication.ui.widget.DynamicSelectTextField
 @Composable
 fun RencanaStudiView(
     mahasiswa: Mahasiswa,
-    onSumbitButtonClicked: (MutableList<String>) -> Unit,
+    onSubmitButtonClicked: (MutableList<String>) -> Unit,
     onBackButtonClicked: () -> Unit
 ) {
     var chosenDropdown by remember {
@@ -177,7 +177,7 @@ fun RencanaStudiView(
                     Button(onClick = { onBackButtonClicked() }) {
                         Text("Kembali")
                     }
-                    Button(onClick = {onSumbitButtonClicked(listData) }, enabled = checked) {
+                    Button(onClick = {onSubmitButtonClicked(listData) }, enabled = checked) {
                         Text("Lanjut")
                     }
                 }
