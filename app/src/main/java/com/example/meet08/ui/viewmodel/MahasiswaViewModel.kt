@@ -9,5 +9,8 @@ import kotlinx.coroutines.flow.update
 
 class MahasiswaViewModel : ViewModel() {
 
+    private val _mahasiswaStateUI =
+        MutableStateFlow(Mahasiswa())
+
 
 }
